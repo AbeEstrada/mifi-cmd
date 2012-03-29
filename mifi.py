@@ -118,7 +118,7 @@ def main(argv):
             else:
                 status()
         elif argv[0] == 'disconnect':
-            if mifi.connection == 'Connected' or mifi.connection == 'Dormant' or
+            if mifi.connection == 'Connected' or mifi.connection == 'Dormant' or \
                 mifi.connection == 'No SIM': # No SIM (it's a bug)
                 mifi.disconnect()
                 print 'Disconnecting...'
